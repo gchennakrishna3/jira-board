@@ -1,0 +1,38 @@
+.modal {
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .modalContent {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    overflow: hidden;
+    background-color: white;
+    padding: 2rem;
+
+    .header {
+      display: flex;
+      justify-content: right;
+      gap: 2rem;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .modalContent {
+    width: 100% !important;
+  }
+}
